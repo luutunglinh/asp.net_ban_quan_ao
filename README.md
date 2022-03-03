@@ -4,4 +4,4 @@ main_page
 Inventory
 <img src="asp01.jpg"></img>
 Product
-<img src="asp02.jpg"></img>
+<img src="asp02.png"></img>
