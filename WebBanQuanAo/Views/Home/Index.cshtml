@@ -1,0 +1,67 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+@{
+    IEnumerable<SanPham> lstDamNu = (IEnumerable<SanPham>)ViewBag.lstDam;
+    IEnumerable<SanPham> lstAoKhoacNu = (IEnumerable<SanPham>)ViewBag.lstAoKhoac;
+    IEnumerable<SanPham> lstTuiSach = (IEnumerable<SanPham>)ViewBag.lstTuiSach;
+    IEnumerable<SanPham> lstGiayNu = (IEnumerable<SanPham>)ViewBag.lstGiay;
+}
+
+
+
+
+    <div class="product">
+        <div class="container">
+            <h1 class="h1"> ĐẦM NỮ</h1>
+            <div class="product-top">
+                <div class="product-one">
+
+                    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstDamNu)
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="h1"> ÁO KHOÁC NỮ</h1>
+            <div class="product-top">
+                <div class="product-one">
+                    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstAoKhoacNu)
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="h1"> TÚI SÁCH NỮ</h1>
+            <div class="product-top">
+                <div class="product-one">
+                    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstTuiSach)
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="h1">GIẦY NỮ</h1>
+            <div class="product-top">
+                <div class="product-one">
+                    @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstGiayNu)
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+<style>
+    .h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>

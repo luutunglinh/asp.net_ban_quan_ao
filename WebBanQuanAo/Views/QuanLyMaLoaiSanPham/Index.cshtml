@@ -1,0 +1,28 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<MaLoaiSanPham>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 20);
+}
+
+<h2 style="font-weight:bold;text-align:center">Quản Lý Danh Mục Cấp 2</h2>
+
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                        grid.Column("IdMLSP", "STT"),
+                        grid.Column("TenLSP", "Tên danh mục cấp 2"),
+                        grid.Column("ThongTin", "Mô tả"),
+                       grid.Column(format: p => @Html.ActionLink("Thêm", "TaoMoi", null, new { @class = "btn btn-default" })),
+                            grid.Column(format: p => @Html.ActionLink("Sửa", "ChinhSua", new { @IdMLSP = p.IdMLSP }, new { @class = "btn btn-success" })),
+                                grid.Column(format: p => @Html.ActionLink("Xóa", "Xoa", new { @IdMLSP = p.IdMLSP }, new { @class = "btn btn-danger" }))
+                        ))
+
+
+
+

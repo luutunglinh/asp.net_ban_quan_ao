@@ -1,0 +1,200 @@
+﻿@using WebBanQuanAo.Models;
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/CssAdmin/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <!-- Custom CSS -->
+    <link href="~/Content/CssAdmin/css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Graph CSS -->
+    <link href="~/Content/CssAdmin/css/font-awesome.css" rel="stylesheet">
+    <!-- jQuery -->
+    <!-- lined-icons -->
+    <link rel="stylesheet" href="~/Content/CssAdmin/css/icon-font.min.css" type='text/css' />
+    <!-- //lined-icons -->
+    <!-- chart -->
+    <script src="~/Content/CssAdmin/js/Chart.js"></script>
+    <link href="~/Content/jquery.bxslider.css" rel="stylesheet" />
+    <!-- //chart -->
+    <!--animate-->
+    <link href="~/Content/CssAdmin/css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="~/Content/CssAdmin/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--//end-animate-->
+    <!----webfonts--->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!-- Meters graphs -->
+    <script src="~/Content/CssAdmin/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/ckfinder/ckfinder.js"></script>
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <script language="javascript">
+        $(document).ready(function () {
+            $('.editors').each(function () {
+                var editor = CKEDITOR.replace($(this).attr('id'), {
+                    // uiColor : '#9AB8F3',
+                    language: 'en',
+                    //plugins:'widget',
+                    skin: 'moono',
+                    width: '100%',
+                    height: 300,
+                    filebrowserBrowseUrl: '/Content/ckfinder/ckfinder.html',
+                    filebrowserImageBrowseUrl: '/Content/ckfinder/ckfinder.html?type=Images',
+                    filebrowserFlashBrowseUrl: '/Content/ckfinder/ckfinder.html?type=Flash',
+                    filebrowserUploadUrl: '/Content/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Files',
+                    filebrowserImageUploadUrl: '/Content/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Images',
+                    filebrowserFlashUploadUrl: '/Content/ckfinder/core/connector/aspx/connector.aspx?command=QuickUpload&type=Flash',
+                }).config.entities = false;
+            })
+        });
+ 
+     </script>
+</head>
+<body class="sticky-header left-side-collapsed">
+    <section>
+        <!-- left side start-->
+        <div class="left-side sticky-left-side" tabindex="5000" style="overflow: hidden; outline: none;">
+
+            <!--logo and iconic logo start-->
+            <div class="logo">
+                <h1><a href="@Url.Action("Index","Home")"><span>Administrtor</span></a></h1>
+            </div>
+            <div class="logo-icon text-center">
+                <a href="@Url.Action("Index","Home")"><i class="lnr lnr-home"></i> </a>
+            </div>
+
+            <!--logo and iconic logo end-->
+            <div class="left-side-inner">
+                <!--sidebar nav start-->
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li class="menu-list">
+                        <a href="@Url.Action("Index","QuanLySanPham")">
+                            <i class="lnr lnr-power-switch"></i>
+                            <span>Sản Phẩm</span>
+                        </a>
+                        <ul class="sub-menu-list" >
+                            <li><a href="@Url.Action("Index","QuanLySanPham")">Quản Lý Sản Phẩm</a> </li>
+                        </ul>
+                    </li>
+
+                    @*//----------------------Nhap hang--------------------------------------*@
+                    <li class="menu-list " >
+                        <a href="@Url.Action("NhapHang","QuanLySanPham")">
+                            <i class="lnr lnr-cog"></i>
+                            <span>Quản Lý Nhập Hàng</span>
+                        </a>
+                        <ul class="sub-menu-list" >
+                            <li><a href="@Url.Action("NhapHang", "QuanLyNhapHang")">Nhập Hàng Sản Phẩm</a> </li>
+                            <li><a href="@Url.Action("SanPhamHetHang", "QuanLyNhapHang")">Sản Phẩm Hết Hàng</a> </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-list " >
+                        <a href="#"><i class="fa fa-check-square-o"></i> <span>Quản Lý Đơn Hàng</span></a>
+                        <ul class="sub-menu-list" style="">
+                            <li><a href="@Url.Action("ChuaThanhToan","QuanLyDonHang")">Chưa Giao</a> </li>
+                            <li><a href="@Url.Action("ChuaGiao", "QuanLyDonHang") ">Chưa Giao Đã Thanh Toán</a></li>
+                            <li><a href="@Url.Action("DaGiaoDaThanhToan", "QuanLyDonHang") ">Đã Giao Đã Thanh Toán</a></li>
+                        </ul>
+                    </li>
+   /@*/--------------------------------------------------THONG KE  DOANH THU-------------------------------------------------------*@
+          
+                    <li><a href="@Url.Action("Index", "ThongKe")"><i class="lnr lnr-pencil"></i> <span>Thống Kê</span></a></li>
+                    <li class="menu-list ">
+                        <a href="#"><i class="lnr lnr-book"></i>  <span>Tin Tức</span></a>
+                        <ul class="sub-menu-list" style="">
+                            <li><a href="@Url.Action("Index","QuanLyTinTuc")">Quản Lý Tin Tức</a> </li>
+                            <li><a href="@Url.Action("Create","QuanLyTinTuc")">Thêm mới</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu-list" >
+                        <a href="#"><i class="lnr lnr-book"></i>  <span>Danh Mục Menu</span></a>
+                        <ul class="sub-menu-list" style="">
+                            <li><a href="@Url.Action("Index","QuanLyDanhMucSanPham")">Danh mục cấp 1</a> </li>       
+                            <li><a href="@Url.Action("Index","QuanLyMaLoaiSanPham")">Danh mục cấp 2</a> </li>            
+                        </ul>
+                    </li>
+
+                </ul>
+                <!--sidebar nav end-->
+            </div>
+        </div>
+        <!-- left side end-->
+        <!-- main content start-->
+        <div class="main-content">
+            <!-- header-starts -->
+            <div class="header-section">
+                <!--toggle button start-->
+                <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+                <!--toggle button end-->
+                <!--notification menu start -->
+                <div class="menu-right">
+                    <div class="user-panel-top">
+                        <div class="profile_details">
+                            <ul>
+                                <li class="dropdown profile_details_drop">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        <div class="profile_img">
+                                            <span style="background:url(../Content/CssAdmin/images/ironman1.png) no-repeat center"> </span>
+                                            <div class="user-name">
+                                                @if (Session["user"] != null && Session["user"] != " ")
+                                                {
+                                                    ThanhVien tv = (ThanhVien)Session["user"];
+                                                    <p>Xin Chào:<span>@tv.HoTen</span></p>
+                                                }
+                                            </div>
+                                            <i class="lnr lnr-chevron-down"></i>
+                                            <i class="lnr lnr-chevron-up"></i>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu drp-mnu" style="margin:8px">
+                                        <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
+                                        <li> <a href="#"><i class="fa fa-user"></i>Profile</a> </li>
+                                        @Html.ActionLink("Logout", "Index", "Admin", new { @class = "fa fa-sign-out" })
+                                    </ul>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                    
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <!--notification menu end -->
+            </div>
+            <!-- //header-ends -->
+            <div id="page-wrapper">
+                <div class="graphs">
+
+                    <div class="switches">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer section start-->
+        <footer>
+            <p>&copy 2020 Easy Admin Panel. All Rights Reserved | Design by W3layouts</p>
+        </footer>
+        <!--footer section end-->
+        <!-- main content end-->
+    </section>
+    <script src="~/Content/CssAdmin/js/jquery.nicescroll.js"></script>
+    <script src="~/Content/CssAdmin/js/scripts.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Content/CssAdmin/js/bootstrap.min.js"></script>
+</body>
+</html>

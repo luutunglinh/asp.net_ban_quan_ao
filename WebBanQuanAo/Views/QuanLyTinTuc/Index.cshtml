@@ -1,0 +1,26 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<TinTuc>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+   WebGrid grid = new WebGrid(source: Model, rowsPerPage: 15);
+}
+<h2 style="font-weight:bold;text-align:center">Quản Lý Tin Tức</h2>
+
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                        grid.Column("IdTinTuc", "Tin Tức"),
+                        grid.Column("TieuDe", "Tiêu Đề"),
+                        grid.Column("NgayDang", "Ngày đăng"),
+                       grid.Column("MoTa", "Nội dung ngắn gọn:"),
+                        grid.Column("HinhAnhDaiDien", "Hình ảnh", format: p => @Html.Raw("<img width=\"200\" height=\"250\" src = \"../Content/CssHome/HinhSanPham/" + p.HinhAnhDaiDien + "\">")),
+                        grid.Column(format: p => @Html.ActionLink("Tạo mới", "ThemTinTuc",null, new { @class = "btn btn-success" })),
+                            grid.Column(format: p => @Html.ActionLink("Sửa", "ChinhSua", new { @IdTinTuc = p.IdTinTuc }, new { @class = "btn btn-danger" })),
+                                grid.Column(format: p => @Html.ActionLink("Xóa", "Xoa", new { @IdTinTuc = p.IdTinTuc }, new { @class = "btn btn-default" }))
+                        ))
+

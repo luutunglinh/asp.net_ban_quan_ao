@@ -1,0 +1,34 @@
+﻿@model WebBanQuanAo.Models.TinTuc
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+@{
+    ViewBag.Title = "xem chi tiết";
+    Layout = "~/Views/Layout/GioHangLayout.cshtml";
+}
+
+<div class="pages" style="padding: 1em 0px">
+    <div class="container">
+        <div class="title" style="color:#0094ff; font-weight:bold; font-size:20px">
+            @Html.DisplayFor(model => model.TieuDe)
+    
+        </div>
+    
+        <br />
+        @Html.DisplayFor(model => model.NgayDang)
+        <br/>
+        <br />
+        <div class="float-left">
+            <img src="@Url.Content("~/Content/CssHome/HinhSanPham/" + Model.HinhAnhDaiDien)" style="width:350px; height:250px; margin:0px 5px;" />
+        </div>
+        <br />
+        <div>
+            <p>@Model.NoiDung</p>
+        </div>
+
+        <div class="clear-both">
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
+
+

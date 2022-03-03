@@ -1,0 +1,39 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<DonDatHang>
+@{
+    ViewBag.Title = "Chưa thanh toán";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10);
+}
+
+<h2>Quản Đơn Hàng (danh sách đơn hàng chưa thanh toán)</h2>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="@Url.Action("ChuaThanhToan","QuanLyDonHang")">Chưa Thanh Toán</a></li>
+    <li role="presentation"><a href="@Url.Action("ChuaGiao","QuanLyDonHang")">Chưa Giao Đã Thanh Toán</a></li>
+    <li role="presentation"><a href="@Url.Action("DaGiaoDaThanhToan","QuanLyDonHang")">Đã Giao Và Đã Thanh Toán</a></li>
+</ul>
+<br />
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                        grid.Column("IdDDH", "Mã đơn đặt hàng"),
+                        grid.Column("IdKH", "Họ tên khách hàng", format: p => p.IdKH != null ? p.KhachHang.TenKhachHang : ""), // toán tử 3 ngôi
+                        grid.Column("NgayDat", "Ngày đặt hàng"),
+                         grid.Column("NgayGiao", "Ngày giao hàng"),
+                        grid.Column("TinhTrangGiaoHang", "Tình trạng giao hàng"),
+                        grid.Column("DaThanhToan", "Đã Thanh toán"),
+              
+                         grid.Column("DaHuy", "Hủy đơn hàng"),
+                                    grid.Column("Duyệt Đơn Hàng", format: p => @Html.ActionLink("Duyệt Đơn Hàng", "DuyetDonHang", new { Id = p.IdDDH }, new { @target = "_blank", @class = "btn btn-success" }))
+                        ))
+
+
+
+
+
+
+

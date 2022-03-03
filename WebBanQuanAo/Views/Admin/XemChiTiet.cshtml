@@ -1,0 +1,28 @@
+﻿
+@using WebBanQuanAo.Models;
+@model IEnumerable<KhachHang>
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10);
+}
+
+<h2 style="font-weight:bold;text-align:center">Quản Lý Khách Hàng </h2>
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                        grid.Column("IdKH", "Khách hàng"),
+                        grid.Column("TenKhachHang", "Tên khách hàng "),
+                         grid.Column("DiaChi", "Tên khách hàng "),
+                        grid.Column("Email", "Tên khách hàng "),
+                         grid.Column("SoDienThoai", "Số điện thoại ")
+                        ))
+
+
+
+
+

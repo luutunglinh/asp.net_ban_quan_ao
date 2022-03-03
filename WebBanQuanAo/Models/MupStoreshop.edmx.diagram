@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b588a8acf86c472ea8a20f775310ddc9" Name="Diagram1">
+        <EntityTypeShape EntityType="BanQuanAoModel.ChiTietDonDatHang" Width="1.5" PointX="5.25" PointY="1.875" />
+        <EntityTypeShape EntityType="BanQuanAoModel.ChiTietPhieuNhap" Width="1.5" PointX="5.25" PointY="6" />
+        <EntityTypeShape EntityType="BanQuanAoModel.DonDatHang" Width="1.5" PointX="3" PointY="12.5" />
+        <EntityTypeShape EntityType="BanQuanAoModel.KhachHang" Width="1.5" PointX="0.75" PointY="13" />
+        <EntityTypeShape EntityType="BanQuanAoModel.LoaiSanPham" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="BanQuanAoModel.MaLoaiSanPham" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="BanQuanAoModel.PhieuNhap" Width="1.5" PointX="3" PointY="9.5" />
+        <EntityTypeShape EntityType="BanQuanAoModel.SanPham" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="BanQuanAoModel.Slider" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BanQuanAoModel.ThanhVien" Width="1.5" PointX="7.75" PointY="3.75" />
+        <EntityTypeShape EntityType="BanQuanAoModel.TinTuc" Width="1.5" PointX="7.75" PointY="6.75" />
+        <AssociationConnector Association="BanQuanAoModel.FK_ChiTietDonDatHang_DonDatHang" />
+        <AssociationConnector Association="BanQuanAoModel.FK_ChiTietDonDatHang_SanPham" />
+        <AssociationConnector Association="BanQuanAoModel.FK_ChiTietPhieuNhap_ToPhieuNhap" />
+        <AssociationConnector Association="BanQuanAoModel.FK_ChiTietPhieuNhap_ToSanPham" />
+        <AssociationConnector Association="BanQuanAoModel.FK_DonDatHang_KhachHang" />
+        <AssociationConnector Association="BanQuanAoModel.FK_SanPham_ToLoaiSanPham" />
+        <AssociationConnector Association="BanQuanAoModel.FK_PhieuNhap_ToMaLoaiSanPham" />
+        <AssociationConnector Association="BanQuanAoModel.FK_SanPham_MaLoaiSanPham" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

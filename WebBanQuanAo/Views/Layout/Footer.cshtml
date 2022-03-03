@@ -1,0 +1,109 @@
+﻿<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=482221048641721";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+ <!--information-starts-->
+<div class="information" >
+    <div class="container">
+        <div class="infor-top">
+            <div class="col-md-3 infor-left" >
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="@Url.Action("LienHe","Home")" target="_blank"><span class="fb"></span><h6>Facebook</h6></a></li>
+                    <li><a href="@Url.Action("LienHe","Home")" target="_blank"><span class="twit"></span><h6>Twitter</h6></a></li>
+                    <li><a href="@Url.Action("LienHe","Home")" target="_blank"><span class="google"></span><h6>Google+</h6></a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 infor-left" ">
+                <h3>Bản đồ:</h3>
+                <ul>
+                <div id="map_canvas">
+
+                </div>
+           </ul>
+            </div>
+            <div class="col-md-3 infor-left" >
+                
+                <h3>Fanpage:</h3>
+                <br />
+                <div class="fb-page" data-href="https://www.facebook.com/EPU.CES" data-tabs="timeline" data-width="300" data-height="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="@Url.Action("LienHe","Home")"><a href="@Url.Action("LienHe","Home")">shop H@L</a></blockquote></div></div>
+
+            </div>
+            <div class="col-md-3 infor-left" >
+                <h3>Thống kê truy cập</h3>
+                @{
+                    HttpApplicationState thongke = HttpContext.Current.ApplicationInstance.Application;
+                }
+                <h4>
+                    <span><i class="fa fa-user-plus" style="padding:5px"></i>Đang online: @thongke["SoNguoiOnline"]</span>
+                </h4>
+                <h4><span><i class="fa fa-user-plus" style="padding:5px"></i>Tổng lượt truy cập: @thongke["SoNguoiTruyCap"]</span></h4>
+                <br />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--information-end-->
+<!--footer-starts-->
+<div class="footer" style="background-color:hotpink">
+    <div class="container">
+        <div class="footer-top">
+            <div class="col-md-6 footer-left">
+                <form>
+                    <input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-md-6 footer-right">
+                <p>© 2020 Luxury Watches. All Rights Reserved | Design by W3layouts</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--footer-end-->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(10.844342, 106.6796062, 17);
+        var mapOptions = {
+            zoom: 9,
+            center: myLatlng
+        };
+
+        var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+        var contentString = "<table><tr><th>Shop H&L</th></tr><tr><td>Địa chỉ: 235 Hoàng Quốc Việt</td></tr></table>";
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'H&L Shop'
+        });
+        infowindow.open(map, marker);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+
+</script>
+<style>
+    #map_canvas {
+        width: 99%;
+        height: 200px;
+        border: solid 1px #ccc;
+    }
+</style>

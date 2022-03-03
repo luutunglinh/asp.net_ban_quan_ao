@@ -1,0 +1,24 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+@{
+    ViewBag.Title = "sản phẩm hết hàng";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 5);
+}
+<h1 style="font-weight:bold;text-align:center">Sản phẩm hết hàng</h1>
+<br />
+
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                        grid.Column("IdSanPham", "Mã sản phẩm"),
+                        grid.Column("TenSanPham", "Tên sản phẩm"),
+                         grid.Column("SoLuongTon", "Số Lượng Tồn"),
+                      grid.Column("DonGia", "Đơn giá nhập"),
+                        grid.Column("HinhAnh", "Hình ảnh", format: p => @Html.Raw("<img width=\"200\" height=\"250\" src = \"../Content/ckfinder/core/connector/aspx/" + p.HinhAnh + "\">")),
+                        grid.Column("Nhập Hàng", format: p => @Html.ActionLink("Nhập Hàng", "NhapHangDon", new { @IdSanPham = p.IdSanPham }, new { @class = "btn btn-success", @target = "_blank" }))
+                 ))

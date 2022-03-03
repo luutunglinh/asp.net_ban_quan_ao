@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Thống kê";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+}
+
+<h1 style="font-weight:bold;text-align:center">Thống Kê</h1>
+
+<div class="col_3">
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-shopping-cart"></i>
+            <div class="stats">
+                <h5> @ViewBag.ThongKeDonHang  <span></span></h5>
+                <div class="grow">
+                    <p>Đơn Hàng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-shopping-cart"></i>
+            <div class="stats">
+                <h5>@ViewBag.ThongKeSanPham<span></span></h5>
+                <div class="grow grow3">
+                    <p>Số lượng tồn</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-users"></i>
+            <div class="stats">
+                <h5>@ViewBag.SoNguoiTruyCap<span></span></h5>
+                <div class="grow grow3">
+                    <p>Lượt Truy Cập</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-user-plus"></i>
+            <div class="stats">
+                <h5>@ViewBag.SoNguoiOnline Online<span></span></h5>
+                <div class="grow grow3">
+                    <p>Online</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"> </div>
+</div>
+<div class="clearfix"> </div>
+<br />
+<div class="col_3">
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-usd"></i>
+            <div class="stats">
+                @{decimal TongDoanhThu = decimal.Parse(ViewBag.ThongKeDoanhThu.ToString());
+                TongDoanhThu = TongDoanhThu / 1000;
+                }
+                <h5>@TongDoanhThu.ToString("#,##") K<span></span></h5>
+                <div class="grow grow3">
+                    <p>Tổng Tiền</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-shopping-bag"></i>
+            <div class="stats">
+                <h5>@ViewBag.ThongKeMaLoaiSanPham<span></span></h5>
+                <div class="grow grow3">
+                    <p>Mã loại sản phẩm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 widget widget1">
+        <div class="r3_counter_box">
+            <i class="fa fa-shopping-bag"></i>
+            <div class="stats">
+                <h5>@ViewBag.ThongKeLoaiSanPham<span></span></h5>
+                <div class="grow grow3">
+                    <p>Loại Sản Phẩm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<div class="clearfix"> </div>
+<br />
+<div class="col_3">
+
+
+</div>
+
+<!--body wrapper end-->
+
+
+

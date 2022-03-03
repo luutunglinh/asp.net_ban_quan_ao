@@ -1,0 +1,15 @@
+﻿@using WebBanQuanAo.Models;
+
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<div class="top-header" style="background-color:palevioletred">
+    <div class="container">
+        <div class="top-header-main">
+            <div class="col-md-6 top-header-left">
+            </div>
+            <div class="col-md-6 top-header-left">
+                @Html.Action("GioHangPartial", "GioHang")
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

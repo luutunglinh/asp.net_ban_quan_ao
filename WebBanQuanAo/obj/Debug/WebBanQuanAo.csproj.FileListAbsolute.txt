@@ -1,0 +1,207 @@
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll.config
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKEditor.NET.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Web.Infrastructure.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Owin.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\PagedList.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\WebGrease.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKEditor.NET.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\PagedList.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.dll
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.pdb
+E:\ASP_WEB\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csprojResolveAssemblyReference.cache
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll.config
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Web.Infrastructure.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Owin.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\PagedList.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\WebGrease.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\PagedList.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CoreCompileInputs.cache
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CopyComplete
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.dll
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.pdb
+D:\Lập trình web nâng cao ASP.NET MVC\web mang14-dc cua nó\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csprojAssemblyReference.cache
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll.config
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\WebBanQuanAo.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Owin.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\PagedList.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\WebGrease.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_FileEditor.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_ImageResize.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\CKFinder_Watermark.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\EntityFramework.SqlServer.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\PagedList.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\PagedList.Mvc.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Helpers.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Mvc.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Optimization.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.Razor.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Deployment.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\System.Web.WebPages.Razor.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Newtonsoft.Json.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Antlr3.Runtime.pdb
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Google.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csprojAssemblyReference.cache
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CoreCompileInputs.cache
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.csproj.CopyComplete
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.dll
+D:\ASP bao cao\WebBanQuanAo\WebBanQuanAo\obj\Debug\WebBanQuanAo.pdb

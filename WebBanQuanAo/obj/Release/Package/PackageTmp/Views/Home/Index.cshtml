@@ -1,0 +1,54 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+@{
+    ViewBag.Title = "Trang Chủ";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+
+@{
+    IEnumerable<SanPham> lstQAM = (IEnumerable<SanPham>)ViewBag.lstQAM;
+    IEnumerable<SanPham> lstMPM = (IEnumerable<SanPham>)ViewBag.lstMPM;
+    IEnumerable<SanPham> lstPKM = (IEnumerable<SanPham>)ViewBag.lstPKM;
+}
+
+
+
+
+<div class="product">
+    <div class="container">
+        <h1 class="h1">Quần Áo</h1>
+        <div class="product-top">
+            <div class="product-one">
+        
+                @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstQAM)
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="h1"> Mỹ Phẩm</h1>
+        <div class="product-top">
+            <div class="product-one">
+                @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstMPM)
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="h1"> Phụ Kiện</h1>
+        <div class="product-top">
+            <div class="product-one">
+                @Html.Partial("~/Views/SanPham/SanPhamStyle1Partial.cshtml", lstPKM)
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>

@@ -1,0 +1,69 @@
+﻿ @using WebBanQuanAo.Models;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/AdminLayout.cshtml";
+}
+
+<body class="sign-in-up">
+
+    <div id="page-wrapper" class="sign-in-wrapper">
+        <div class="graphs">
+            <div class="sign-in-form">
+                <div class="sign-in-form-top">
+                    <p><a href="#">Administrator</a></p>
+                </div>
+                <div class="signin">
+                    <div class="signin-rit">
+                        <span class="checkbox1">
+                            <label class="checkbox"><input type="checkbox" name="checkbox" checked="">Quên Mật Khẩu ?</label>
+                        </span>
+                        <p><a href="#">Click Here</a> </p>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="log-input">
+                        @using (Ajax.BeginForm("LoginAdmin", "Admin", new AjaxOptions { InsertionMode = InsertionMode.Replace, UpdateTargetId = "ThongBao" }))
+                        {
+                            <div class="log-input-left">
+                                <input class="email TaiKhoan" name="txtUser" placeholder="Tên đăng nhập" required="" type="text">
+                                <input class="password MatKhau" name="txtPass" placeholder="Mật khẩu" required="" type="password">
+                            </div>
+                            <h3 style="font-weight:bold;color:red;text-align:left;" id="ThongBao"> </h3>
+
+                            <input value="Đăng nhập" type="submit" id="btnDangNhap1">
+                            //<input value="Thoát" type="submit" href="@Url.Action("Index","Home")">
+                    <p class="btn btn-success" style="width:400px;margin-top:20px;height:50px;font-size:20px">
+                        <a style="color:white" href="@Url.Action("Index","Home")">Exit</a>
+                    </p>
+                            
+
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer section start-->
+    <!--footer section end-->
+</body>
+
+<script type="text/javascript">
+    $("#btnDangNhap1").click(function () {
+        var TaiKhoan = $(".TaiKhoan").val();
+        var MatKhau = $(".MatKhau").val();
+        //    alert("Tài khoản:" + TaiKhoan + "\n Mật khẩu:" + MatKhau);
+        if (TaiKhoan == "") {
+            alert("Nhập vào tài khoản");
+            return;
+        }
+        if (MatKhau == "") {
+            alert("Nhập vào mật khẩu");
+            return;
+        }
+    });
+
+</script>
+
+
+
+

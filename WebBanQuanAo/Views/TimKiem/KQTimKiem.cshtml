@@ -1,0 +1,38 @@
+﻿@using WebBanQuanAo.Models;
+@model PagedList.PagedList<SanPham>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+    Layout = "~/Views/Layout/ProductLayout.cshtml";
+}
+
+<div class="col-md-9 prdt-left">
+    <div class="product-one">
+        @foreach (var item in Model.OrderBy(n => n.DonGia))
+        {
+            <div class="col-md-4 product-left p-left">
+                <div class="product-main simpleCart_shelfItem">
+                    <a href="@Url.Action("XemChiTiet", "SanPham", new {@Id = item.IdSanPham})" class=" mask"><img class="img-responsive zoom-img" src="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + item.HinhAnh)" alt=" " style="width:250px;height:250px"></a>
+                    <div class="product-bottom">
+                        <div><h3>@item.TenSanPham</h3></div>
+                        @*<h4> <a class="item_add" href="@Url.Action("ThemGioHang", "GioHang", new { @IdSanPham = item.IdSanPham, @strUrl= Request.Url.ToString() })"><i></i></a> <span class=" item_price">@item.DonGia.Value.ToString("#,##")</span></h4>*@
+                        <h4><i></i><span class=" item_price">@item.DonGia.Value.ToString("#,##")</span></h4>
+                        <div class="Ajax" style="margin:0px;padding:5px">
+                            @Ajax.ActionLink("Thêm Giỏ Hàng", "ThemGioHangAjax", "GioHang", new { @IdSanPham = item.IdSanPham, @strUrl = Request.Url.ToString() }, new AjaxOptions { HttpMethod = "GET", UpdateTargetId = "divGioHang", InsertionMode = InsertionMode.Replace }, new { @class = "btn btn-success" })
+                        </div>
+                    </div>
+                    <div class="srch srch1">
+                        <span>-50%</span>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="clearfix"></div>
+        <div class="dlink" style="margin:5px;padding:10px">
+            Trang @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+            @Html.PagedListPager(Model, page => @Url.Action("KQTimKiem", new { @page = page, @sTuKhoa = ViewBag.TuKhoa }))
+        </div>
+    </div>
+</div>
+
+

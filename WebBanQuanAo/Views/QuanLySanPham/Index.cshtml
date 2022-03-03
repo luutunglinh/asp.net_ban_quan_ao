@@ -1,0 +1,36 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    // khởi tạo webgrid
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 10);
+}
+
+<h2 style="font-weight:bold;text-align:center">Quản Lý Sản Phẩm</h2>
+
+@grid.GetHtml(
+            tableStyle: "table table-bordered table-condensed table-responsive",
+            headerStyle: "gridHead",
+            footerStyle: "gridHead",
+            rowStyle: "gridRow",
+            alternatingRowStyle: "gridAlter",
+            columns: grid.Columns(
+                         grid.Column("IdSanPham", "STT"),
+                         grid.Column("TenSanPham", "Tên sản phẩm"),
+                         grid.Column("DonGia", "Đơn giá"),
+                        grid.Column("SoLuongTon", "Số lượng"),
+                        grid.Column("NgayCapNhat", "Ngày nhập"),
+                        grid.Column("IdLoaiSanPham", "Loại sản phẩm", format: p => p.IdLoaiSanPham != null ? p.LoaiSanPham.TenLoai : ""), // toán tử 3 ngôi
+                        grid.Column("IdMLSP", "Mã loại sản phẩm:", format: p => p.IdMLSP != null ? p.MaLoaiSanPham.TenLSP : ""), // toán tử 3 ngôi          
+                        grid.Column("HinhAnh", "Hình ảnh", format: p => @Html.Raw("<img width=\"200\" height=\"250\" src = \"../Content/ckfinder/core/connector/aspx/" + p.HinhAnh + "\">")),
+                        grid.Column("Tạo Mới Sản Phẩm", format: p => @Html.ActionLink("Thêm", "TaoMoiSanPham", null, new { @class = "btn btn-success" })),
+                        grid.Column("Chỉnh Sửa Sản Phẩm", format: p => @Html.ActionLink("Sửa", "ChinhSuaSanPham", new { @IdSanPham = p.IdSanPham }, new { @class = "btn btn-danger" })),
+                       grid.Column("Xóa Sản Phẩm", format: p => @Html.ActionLink("Xóa", "XoaSanPham", new { @IdSanPham = p.IdSanPham }, new { @class = "btn btn-default" }))
+
+                        ))
+
+
+
+
+

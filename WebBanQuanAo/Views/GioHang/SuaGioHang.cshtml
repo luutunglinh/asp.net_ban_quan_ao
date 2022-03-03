@@ -1,0 +1,81 @@
+﻿@using WebBanQuanAo.Models
+@model ItemGioHang
+@{
+    ViewBag.Title = "Cập Nhật Giỏ Hàng";
+    Layout = "~/Views/Layout/GioHangLayout.cshtml";
+}
+
+@{
+    List<ItemGioHang> lstGioHang = ViewBag.GioHang as List<ItemGioHang>;
+
+}
+<div class="cart-items">
+    <div class="in-check">
+        <div class="container">
+            <div class="table-responsive">
+                <table class=" table table-striped table-bordered table table-condensed">
+                    <tr style="text-align:center">
+                        <td>Mã Sản Phẩm</td>
+                        <td>Tên Sản Phẩm</td>
+                        <td>Hình Ảnh</td>
+                        <td>Số Lượng</td>
+                        <td>Đơn Giá</td>
+                        <td>Thành Tiền</td>
+                        <td>Cập Nhật Giỏ Hàng</td>
+                        <td>Xóa Giỏ Hàng</td>
+
+                    </tr>
+                    @foreach (var item in lstGioHang)
+                    {
+                        // sản phẩm có mả sản phẩm được chỉnh sửa gửi từ tham số bên xem giỏ hàng
+                        if (Model.IdSanPham == item.IdSanPham)
+                        {
+
+                            using (Html.BeginForm("CapNhatGioHang", "GioHang"))
+                            {
+                                <tr style="text-align:center">
+                                    <td>@item.IdSanPham @Html.Hidden("IdSanPham", item.IdSanPham)</td>
+                                    <td>@item.TenSanPham</td>
+                                    <td><img src="@Url.Content("~/Content/CssHome/HinhSanPham/" +item.HinhAnh)" style="height:250px;width:150px" /></td>
+                                    <td>
+                                        @Html.TextBox("SoLuong", item.SoLuong, new { @class = "SoLuongThayDoi" })
+                                        <p style="color:red;" id="TB_SoLuongThayDoi"></p>
+                                    </td>
+                                    <td>@item.DonGia.ToString("#,##")</td>
+                                    <td>@item.TongTien.ToString("#,##")</td>
+                                    <td> <input type="submit" value="Cập Nhật" class="btn btn-success " id="btnCapNhatGH"></td>
+                                    <td>@Html.ActionLink("Xóa Giỏ Hàng", "XoaGioHang", new { @IdSanPham = item.IdSanPham }, new { @class = "btn btn-danger" })</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr style="text-align:center">
+                                <td>@item.IdSanPham</td>
+                                <td>@item.TenSanPham</td>
+                                <td><img src="@Url.Content("~/Content/CssHome/HinhSanPham/" +item.HinhAnh)" style="height:250px;width:150px" /></td>
+                                <td>@item.SoLuong</td>
+                                <td>@item.DonGia.ToString("#,##")</td>
+                                <td>@item.TongTien.ToString("#,##")</td>
+                                <td>@Html.ActionLink("Chỉnh Sửa", "SuaGioHang", new { @IdSanPham = item.IdSanPham }, new { @class = "btn btn-success" })</td>
+                                <td>@Html.ActionLink("Xóa Giỏ Hàng", "XoaGioHang", new { @IdSanPham = item.IdSanPham }, new { @class = "btn btn-danger" })</td>
+                            </tr>
+                        }
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#btnCapNhatGH").click(function () {
+        //Kiểm tra số lượng không phải là số hoặc nhỏ hơn 0
+        var SoLuong = $(".SoLuongThayDoi").val();
+        if (isNaN(SoLuong) == true || SoLuong < 0) {
+            $("#TB_SoLuongThayDoi").text("Số lượng không hợp lệ!");
+            return false;
+        }
+
+    });
+</script>
+

@@ -1,0 +1,18 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+<div class="container">
+    <div class="about-top grid-1">
+        @foreach (var item in Model.Take(3))
+        {
+            <div class="col-md-4 about-left">
+                <figure class="effect-bubba">
+                    <img class="img-responsive zoom-img" src="@Url.Content("~/Content/CssHome/HinhSanPham/" + Model.ElementAt(0).HinhAnh)" alt="" />
+                    <figcaption>
+                        <h4> @item.TenSanPham</h4>
+                    </figcaption>
+                </figure>
+            </div>
+        }
+        <div class="clearfix"></div>
+    </div>
+</div>

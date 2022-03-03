@@ -1,0 +1,19 @@
+﻿@using WebBanQuanAo.Models;
+@model IEnumerable<SanPham>
+<div class="container">
+    <div class="about-top grid-1">
+        @foreach (var item in Model.Take(3))
+        {
+            <div class="col-md-4 about-left">
+                <figure class="effect-bubba">
+                    @*<img class="img-responsive zoom-img" src="@url.content("~/content/ckfinder/core/connector/aspx/" + model.elementat(0).hinhanh)" alt="" />*@
+                    @*<img class="img-responsive zoom-img" src="@url.content("~/content/ckfinder/core/connector/aspx/" + @.item.HinhAnh)" alt="" />*@
+                    <figcaption>
+                        <h4> @item.TenSanPham ok em</h4>
+                    </figcaption>
+                </figure>
+            </div>
+        }
+        <div class="clearfix"></div>
+    </div>
+</div>

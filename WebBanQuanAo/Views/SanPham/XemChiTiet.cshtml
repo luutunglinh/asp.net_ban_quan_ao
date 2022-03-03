@@ -1,0 +1,123 @@
+﻿@using WebBanQuanAo.Models;
+@model SanPham
+@{
+    ViewBag.Title = "XemChiTiet";
+    Layout = "~/Views/Layout/ProductLayout.cshtml";
+}
+<div id="fb-root"></div>
+<script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6&appId=482221048641721";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="col-md-9 single-main-left">
+    <div class="sngl-top">
+        <div class="col-md-5 single-top-left">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li data-thumb="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh)">
+                        <div class="thumb-image"> <img src="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh)" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                    </li>
+                    <li data-thumb="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh1)">
+                        <div class="thumb-image"> <img src="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh1)" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                    </li>
+                    <li data-thumb="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh2)">
+                        <div class="thumb-image"> <img src="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh2)" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- FlexSlider -->
+            <script src="~/Content/CssHome/js/imagezoom.js"></script>
+            <script defer src="~/Content/CssHome/js/jquery.flexslider.js"></script>
+            <link rel="stylesheet" href="~/Content/CssHome/css/flexslider.css" type="text/css" media="screen" />
+
+            <script>
+                // Can also be used with $(document).ready()
+                $(window).load(function () {
+                    $('.flexslider').flexslider({
+                        animation: "slide",
+                        controlNav: "thumbnails"
+                    });
+                });
+            </script>
+        </div>
+        <div class="col-md-7 single-top-right">
+            <div class="single-para simpleCart_shelfItem">
+                <h2>@Model.TenSanPham</h2>
+                <div class="star-on">
+                    <ul class="star-footer">
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i> </i></a></li>
+                    </ul>
+                    <div class="review">
+                        <a href="#">Lượt Xem: @Model.LuotXem  </a>
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+                <h5 class="item_price">@Model.DonGia.Value.ToString("#,##")</h5>
+                <p>@Model.MoTa</p>
+                <a href="@Url.Action("ThemGioHang", "GioHang", new { @IdSanPham = Model.IdSanPham, @strUrl= Request.Url.ToString() })" class=" add-cart item_add">Giỏ Hàng</a>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <div class="tabs">
+        <ul class="menu_drop">
+            <li class="item2">
+                <a href="#"><img src="@Url.Content("~/Content/CssHome/images/arrow.png")" alt="">Mô Tả </a>
+                <ul>
+                    <li class="subitem1"><p style="color:#000000; text-align:left;background:#ffffff">@Model.MoTa</p></li>
+                </ul>
+            </li>
+            <li class="item2">
+                <a href="#"><img src="@Url.Content("~/Content/CssHome/images/arrow.png")" alt="">Lượt xem: </a>
+                <ul>
+                    <li class="subitem1"><p style="color:#000000; text-align:left;background:#ffffff">Lượt xem sản phẩm :@Model.LuotXem</p></li>
+                </ul>
+            </li>
+            <li class="item3">
+                <a href="#"><img src="@Url.Content("~/Content/CssHome/images/arrow.png")" alt=""> Bình Luận</a>
+          
+                    @*<li class="subitem2"><div class="fb-comments" data-href="http://localhost:31615/" data-numposts="5"></div></li>*@
+              
+            </li>
+        </ul>
+    </div>
+    <div class="latestproducts">
+        <div class="product-one">
+            @foreach (var item in Model.IdSanPham.ToString().Take(4))
+            {
+                <div class="col-md-3 product-left p-left">
+                    <div class="product-main simpleCart_shelfItem">
+                        <a href="@Url.Action("XemChiTiet", "SanPham", new { @Id=Model.IdSanPham})" class="mask"><img class="img-responsive zoom-img" src="@Url.Content("~/Content/ckfinder/core/connector/aspx/" + Model.HinhAnh)" alt="" /></a>
+                        <div class="product-bottom">
+                            <h3>@Html.Raw(Model.TenSanPham)</h3>
+                            <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">@Model.DonGia.Value.ToString("#,##")</span></h4>
+                        </div>
+                        <div class="srch">
+                            <span>-20%</span>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+

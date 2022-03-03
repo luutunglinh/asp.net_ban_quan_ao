@@ -1,0 +1,189 @@
+﻿@using WebBanQuanAo.Models;
+@model PhieuNhap
+
+    @{
+        ViewBag.Title = "Nhập hàng";
+        Layout = "~/Views/Layout/AdminQuanTri.cshtml";
+    }
+    @{
+        IEnumerable<MaLoaiSanPham> LstMLSP = ViewBag.IdMLSP as IEnumerable<MaLoaiSanPham>;
+    }
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+
+    <h1 style="font-weight:bold;text-align:center">Quản Lý Nhập Hàng</h1>
+    <br />
+    @using (Html.BeginForm())
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    Nhà cung cấp :
+                </div>
+                <div class="col-md-5">
+                    @*Chọn nhà cung cấp*@
+                    <select class="IdMLSP" name="IdMLSP">
+
+                        @foreach (var item in LstMLSP)
+                        {
+                            @*<option value="@item.IdMLSP">@item.TenLSP</option>*@
+                        }
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                @*Ngày nhập*@
+                <div class="col-md-2">
+                    Ngày nhập :
+                </div>
+                <div class="col-md-5">
+                    <input name="NgayNhap" type="text" id="datepicker" />
+                </div>
+            </div>
+            <div class="clearfix">  </div>
+        </div>
+        <br /><br>
+
+        //phần chi tiết nhập hàng
+        <table class="table tblChiTietPhieuNhap table-bordered table-condensed">
+            @{IEnumerable<SanPham> ListSanPham = ViewBag.ListSanPham as IEnumerable<SanPham>;}
+            @*Tạo ra 1 tr với nội dung nhập hàng của 1 sản phẩm*@
+            <tr class="trNhapHang" style="display:none">
+                <td>
+                    <select class="ddlSanPham" name="" style="">
+                        @foreach (var item in ListSanPham)
+                        {
+                            <option value="@item.IdSanPham">@item.TenSanPham</option>
+                        }
+                    </select>
+                </td>
+                <td>
+                    <input name="" class="txtDonGia" value="0" />
+                </td>
+                <td>
+                    <input name="" class="txtSoLuong" value="0" />
+                </td>
+                <td>
+                    <input name="" class="btnDelete btn btn-danger" value="-" style="width:30px;height:30px " />
+                </td>
+            </tr>
+            <tr class="trFirstChild" data-id="-1">
+                <td>Sản phẩm</td>
+                <td>Đơn giá nhập</td>
+                <td>Số lượng nhập</td>
+                <td></td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="button" value="+" class="btn btn-success" id="btnAdd" style="padding:9px 12px" />
+                <input type="submit" value="Nhập hàng" class="btn btn-primary" id="btnNhapHang" style="padding:9px 12px" />
+            </div>
+        </div>
+    }
+    <script>
+        $("#btnAdd").click(function () {
+            //bước 4:
+            var id_cuoi = $(".tblChiTietPhieuNhap").find("tr:last-child").attr("data-id");
+            i = parseInt(id_cuoi) + 1;
+            // bước 1: lấy nội dung thẻ tr
+            var tdnoidung = $(".trNhapHang").html();
+            // bước 2: tạo một td lấy nội dung
+            var trnoidung = "<tr class =\"trNhapHangEd\" data-id =\"" + i + "\">" + tdnoidung + "</tr>";
+            // bước 3: lấy thể tr apden vào table
+            $(".tblChiTietPhieuNhap").append(trnoidung);
+            loadIDLENTHE();
+        });
+        // hàm load id lên thẻ
+        function loadIDLENTHE() {
+            $(".trNhapHangEd").each(function () {
+                // lấy data id của thẻ tr hiện tại
+                var id = $(this).attr("data-id");
+                var nameIdSanPham = "[" + id + "].IdSanPham"; // tạo mã sản phẩm
+                var nameSoLuongNhap = "[" + id + "].SoLuongNhap"; // tạo số lượng
+                var nameDonGiaNhap = "[" + id + "].DonGiaNhap"; // tạo đơn giá
+                $(this).find(".ddlSanPham").attr("name", nameIdSanPham);
+                $(this).find(".txtDonGia").attr("name", nameDonGiaNhap);
+                $(this).find(".txtSoLuong").attr("name", nameSoLuongNhap);
+            });
+        }
+        function CapNhatID() {
+            // lấy lại tr
+            var id_cuoi = $(".tblChiTietPhieuNhap").find("trFirstChild").attr("data-id");
+            i = parseInt(id_cuoi) + 1;
+
+            $(".trNhapHangEd").each(function () {
+                // lấy data id của thẻ tr hiện tại
+                var id = i;
+                $(this).attr("data-id", i);
+                // cập nhật lại id sau khi xóa
+                var nameIdSanPham = "[" + id + "].IdSanPham"; // tạo mã sản phẩm
+                var nameSoLuongNhap = "[" + id + "].SoLuongNhap"; // tạo số lượng
+                var nameDonGiaNhap = "[" + id + "].DonGiaNhap"; // tạo đơn giá
+                $(this).find(".ddlSanPham").attr("name", nameIdSanPham);
+                $(this).find(".txtDonGia").attr("name", nameDonGiaNhap);
+                $(this).find(".txtSoLuong").attr("name", nameSoLuongNhap);
+                i++;
+            });
+        }
+
+        // xử lý nhập hàng
+        $("#btnNhapHang").click(function () {
+            if (KiemTraDonGia() == false) {
+                // nếu tồn tại một giá trị bất kì thuộc class đơn giá ko phải số thì ngăn ko cho submit về server
+                return false;
+            }
+            if (KiemTraSoLuong() == false) {
+                // nếu tồn tại một giá trị bất kì thuộc class đơn giá ko phải số thì ngăn ko cho submit về server
+                return false;
+            }
+        });
+        function KiemTraDonGia() {
+            var bl = true;
+            // duyệt vòng lặp each
+            $(".txtDonGia").each(function () {
+                var giatri = $(this).val();
+                if (isNaN(giatri) == true) {
+                    alert("Đơn giá không hợp lệ");
+                    bl = false;
+                    return bl;
+                }
+            });
+            return bl;
+        }
+        function KiemTraSoLuong() {
+            var bl = true;
+            //Duyệt vòng lặp each
+            $(".txtSoLuong").each(function () {
+                var giatri = $(this).val();
+                if (isNaN(giatri) == true) {
+                    alert("Số lượng không hợp lệ!");
+                    bl = false;
+                    return bl;
+                }
+            });
+            return bl;
+        }
+
+        //xử lý xóa
+        $("body").delegate(".btnDelete", "click", function () {
+            // xóa phần tử cha thứ ngoài
+            $(this).closest(".trNhapHangEd").remove();
+            CapNhatID();
+        });
+
+    </script>
+

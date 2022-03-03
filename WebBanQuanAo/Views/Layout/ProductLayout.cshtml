@@ -1,0 +1,172 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/CssHome/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
+    <script src="~/Content/CssHome/js/jquery-1.11.0.min.js"></script>
+    <!--Custom-Theme-files-->
+    <!--theme-style-->
+    <link href="~/Content/CssHome/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--start-menu-->
+    <script src="~/Content/CssHome/js/simpleCart.min.js"> </script>
+    <link href="~/Content/CssHome/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="~/Content/CssHome/js/memenu.js"></script>
+    <script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+    <!--dropdown-->
+    <script src="~/Content/CssHome/js/jquery.easydropdown.js"></script>
+    <script src="~/Content/CssHome/js/LienHe.js"></script>
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/ckfinder/ckfinder.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arimo&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+        $(function () {
+
+            var menu_ul = $('.menu_drop > li > ul'),
+                   menu_a = $('.menu_drop > li > a');
+
+            menu_ul.hide();
+
+            menu_a.click(function (e) {
+                e.preventDefault();
+                if (!$(this).hasClass('active')) {
+                    menu_a.removeClass('active');
+                    menu_ul.filter(':visible').slideUp('normal');
+                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                } else {
+                    $(this).removeClass('active');
+                    $(this).next().stop(true, true).slideUp('normal');
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <!--top-header-->
+    @Html.Partial("~/Views/Layout/Header.cshtml")
+    <!--top-header-->
+    <!--start-logo-->
+    <div class="logo">
+        <a href="@Url.Action("Index","Home")"><h1>Shop h&L</h1></a>
+    </div>
+    <!--start-logo-->
+    <!--bottom-header-->
+    <div class="header-bottom">
+        <div class="container">
+            @Html.Action("MenuPartial", "Home")
+        </div>
+    </div>
+    <!--bottom-header-->
+    <!--start-breadcrumbs-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs-main">
+                <ol class="breadcrumb">
+                    <li><a href="@Url.Action("Index","Home")">Trang Chủ</a></li>
+                    <li class="active">@ViewBag.Title</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--end-breadcrumbs-->
+    <!--start-single-->
+      <div class="single contact">
+          <div class="container">
+              <div class="single-main">
+                  @RenderBody()
+                <!--  <div class="col-md-3 single-right">
+                      <div class="w_sidebar">
+                          <section class="sky-form">
+                              <h4>Catogories</h4>
+                              <div class="row1 scroll-pane">
+                                  <div class="col col-4">
+                                      <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>All Accessories</label>
+                                  </div>
+                                  <div class="col col-4">
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women Watches</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kids Watches</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men Watches</label>
+                                  </div>
+                              </div>
+                          </section>
+                          <section class="sky-form">
+                              <h4>Brand</h4>
+                              <div class="row1 row2 scroll-pane">
+                                  <div class="col col-4">
+                                      <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>kurtas</label>
+                                  </div>
+                                  <div class="col col-4">
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sonata</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Titan</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Casio</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Omax</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>shree</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fastrack</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fossil</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Maxima</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Yepme</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Citizen</label>
+                                      <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Diesel</label>
+                                  </div>
+                              </div>
+                          </section>
+                          <section class="sky-form">
+                              <h4>Colour</h4>
+                              <ul class="w_nav2">
+                                  <li><a class="color1" href="#"></a></li>
+                                  <li><a class="color2" href="#"></a></li>
+                                  <li><a class="color3" href="#"></a></li>
+                                  <li><a class="color4" href="#"></a></li>
+                                  <li><a class="color5" href="#"></a></li>
+                                  <li><a class="color6" href="#"></a></li>
+                                  <li><a class="color7" href="#"></a></li>
+                                  <li><a class="color8" href="#"></a></li>
+                                  <li><a class="color9" href="#"></a></li>
+                                  <li><a class="color10" href="#"></a></li>
+                                  <li><a class="color12" href="#"></a></li>
+                                  <li><a class="color13" href="#"></a></li>
+                                  <li><a class="color14" href="#"></a></li>
+                                  <li><a class="color15" href="#"></a></li>
+                                  <li><a class="color5" href="#"></a></li>
+                                  <li><a class="color6" href="#"></a></li>
+                                  <li><a class="color7" href="#"></a></li>
+                                  <li><a class="color8" href="#"></a></li>
+                                  <li><a class="color9" href="#"></a></li>
+                                  <li><a class="color10" href="#"></a></li>
+                              </ul>
+                          </section>
+                          <section class="sky-form">
+                              <h4>discount</h4>
+                              <div class="row1 row2 scroll-pane">
+                                  <div class="col col-4">
+                                      <label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and above</label>
+                                      <label class="radio"><input type="radio" name="radio"><i></i>50 % and above</label>
+                                      <label class="radio"><input type="radio" name="radio"><i></i>40 % and above</label>
+                                  </div>
+                                  <div class="col col-4">
+                                      <label class="radio"><input type="radio" name="radio"><i></i>30 % and above</label>
+                                      <label class="radio"><input type="radio" name="radio"><i></i>20 % and above</label>
+                                      <label class="radio"><input type="radio" name="radio"><i></i>10 % and above</label>
+                                  </div>
+                              </div>
+                          </section>
+                      </div>
+                  </div>-->
+                  <div class="clearfix"> </div>
+              </div>
+          </div>
+      </div>
+    <!--end-single-->
+    <!--information-starts-->
+    @Html.Partial("~/Views/Layout/Footer.cshtml")
+    <!--footer-end-->
+</body>
+</html>

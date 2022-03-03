@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebBanQuanAo.Models.TinTuc>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+@{
+    ViewBag.Title = "tin tức";
+    Layout = "~/Views/Layout/GioHangLayout.cshtml";
+}
+
+<div class="pages" style="padding:1em 0px">
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <br />
+            <div id="row-@item.IdTinTuc" style="border-bottom: 1px solid #d0cece; margin-bottom:10px; padding-bottom:10px;">
+
+                <div>
+                    @Html.ActionLink(@item.TieuDe, "NoiDung", new { id = item.IdTinTuc }, new { @class = "textHeader" })
+
+                </div>
+                <div class="float-left">
+                    <a href="@Url.Action("NoiDung", new { id = item.IdTinTuc })">
+                        <br />
+                        <img src="@Url.Content("~/Content/CssHome/HinhSanPham/" + item.HinhAnhDaiDien)" style="width:450px; height:350px; margin:0px 5px;" />
+                    </a>
+                    <br />
+                </div>
+                <br />
+                <div>
+                    @Html.DisplayFor(modelItem => item.MoTa)
+                </div>
+                <br />
+                <div class="clear-both">
+                    @Html.ActionLink("Xem Chi tiết", "NoiDung", new { id = item.IdTinTuc })
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
